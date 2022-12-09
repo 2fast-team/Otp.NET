@@ -46,7 +46,7 @@ namespace OtpNet
         internal static void Destroy(byte[] sensitiveData)
         {
             if(sensitiveData == null)
-                throw new ArgumentNullException("sensitiveData");
+                throw new ArgumentNullException(nameof(sensitiveData));
             new Random().NextBytes(sensitiveData);
         }
 

@@ -54,7 +54,7 @@ namespace OtpNet
         public Otp(byte[] secretKey, OtpHashMode mode)
         {
             if(!(secretKey != null))
-                throw new ArgumentNullException("secretKey");
+                throw new ArgumentNullException(nameof(secretKey));
             if(!(secretKey.Length > 0))
                 throw new ArgumentException("secretKey empty");
 
@@ -72,7 +72,7 @@ namespace OtpNet
         public Otp(IKeyProvider key, OtpHashMode mode)
         {
             if (key == null)
-                throw new ArgumentNullException("key");
+                throw new ArgumentNullException(nameof(key));
 
             this.secretKey = key;
 

@@ -68,7 +68,7 @@ namespace OtpNet
         public static byte[] DeriveKeyFromMaster(IKeyProvider masterKey, byte[] publicIdentifier, OtpHashMode mode = OtpHashMode.Sha1)
         {
             if(masterKey == null)
-                throw new ArgumentNullException("masterKey");
+                throw new ArgumentNullException(nameof(masterKey));
             return masterKey.ComputeHmac(mode, publicIdentifier);
         }
 

@@ -62,7 +62,7 @@ namespace OtpNet
         public InMemoryKey(byte[] key)
         {
             if(!(key != null))
-                throw new ArgumentNullException("key");
+                throw new ArgumentNullException(nameof(key));
             if(!(key.Length > 0))
                 throw new ArgumentException("The key must not be empty");
 

@@ -93,11 +93,11 @@ namespace OtpNet
         private static void VerifyParameters(int step, int totpSize)
         {
             if(!(step > 0))
-                throw new ArgumentOutOfRangeException("step");
+                throw new ArgumentOutOfRangeException(nameof(step));
             if(!(totpSize > 0))
-                throw new ArgumentOutOfRangeException("totpSize");
+                throw new ArgumentOutOfRangeException(nameof(totpSize));
             if(!(totpSize <= 10))
-                throw new ArgumentOutOfRangeException("totpSize");
+                throw new ArgumentOutOfRangeException(nameof(totpSize));
         }
 
         /// <summary>

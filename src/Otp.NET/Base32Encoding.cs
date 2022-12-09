@@ -14,7 +14,7 @@ namespace OtpNet
         {
             if(string.IsNullOrEmpty(input))
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
 
             input = input.TrimEnd('='); //remove padding characters
@@ -111,10 +111,9 @@ namespace OtpNet
             {
                 return value - 97;
             }
-
-            throw new ArgumentException("Character is not a Base32 character.", "c");
+            throw new ArgumentException("Character is not a Base32 character.", nameof(c));
         }
-
+         
         private static char ValueToChar(byte b)
         {
             if(b < 26)
@@ -127,7 +126,7 @@ namespace OtpNet
                 return (char)(b + 24);
             }
 
-            throw new ArgumentException("Byte is not a Base32 value.", "b");
+            throw new ArgumentException("Byte is not a Base32 value.", nameof(b));
         }
     }
 }
