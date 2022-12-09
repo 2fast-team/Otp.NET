@@ -57,7 +57,7 @@ namespace OtpNet
         {
             if(input == null || input.Length == 0)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
 
             int charCount = (int)Math.Ceiling(input.Length / 5d) * 8;
