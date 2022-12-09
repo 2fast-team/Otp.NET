@@ -16,8 +16,6 @@ For documentation and examples visit the project website on GitHub at https://gi
     <PackageTags>otp,totp,hotp,2fa,two factor</PackageTags>
     <PackageIconUrl>http://i.imgur.com/XFfC64v.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/kspearrin/Otp.NET</RepositoryUrl>
-    <SignAssembly>False</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Xamarin\2fast\Project2FA\Project2FA.UWP\Project2FA.UWP_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
     <RootNamespace>OtpNet</RootNamespace>
   </PropertyGroup>
 
