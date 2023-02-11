@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Version>1.2.3</Version>
-    <TargetFrameworks>netstandard2.0;net7.0-android; net7.0-ios; net7.0-maccatalyst</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
     <PackageId>Otp.NET</PackageId>
     <Title>Otp.NET</Title>
     <Authors>Kyle Spearrin</Authors>
