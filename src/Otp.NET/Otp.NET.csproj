@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Version>1.2.3</Version>
-    <TargetFrameworks>netstandard2.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>uap10.0.17763;uap10.0.22621;net7.0</TargetFrameworks>
     <PackageId>Otp.NET</PackageId>
     <Title>Otp.NET</Title>
     <Authors>Kyle Spearrin</Authors>
@@ -19,6 +19,19 @@ For documentation and examples visit the project website on GitHub at https://gi
     <RootNamespace>OtpNet</RootNamespace>
     <Platforms>AnyCPU;x64;ARM;ARM64;x86</Platforms>
   </PropertyGroup>
+
+	<Choose>
+		<When Condition="'$(TargetFramework)'=='uap10.0.17763'">
+			<ItemGroup>
+				<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
+			</ItemGroup>
+		</When>
+		<When Condition="'$(TargetFramework)'=='uap10.0.22621'">
+			<ItemGroup>
+				<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
+			</ItemGroup>
+		</When>
+	</Choose>
 
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.0">
