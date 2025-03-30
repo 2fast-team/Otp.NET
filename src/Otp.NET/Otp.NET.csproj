@@ -20,6 +20,7 @@
 		<RepositoryUrl>https://github.com/kspearrin/Otp.NET</RepositoryUrl>
 		<RootNamespace>OtpNet</RootNamespace>
 		<Platforms>AnyCPU;x64;ARM;ARM64;x86</Platforms>
+		<LangVersion>13.0</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)'=='uap10.0.17763' or '$(TargetFramework)'=='uap10.0.22621'">
