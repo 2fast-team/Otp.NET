@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<Version>1.2.3</Version>
-		<TargetFrameworks>uap10.0.17763;uap10.0.22621;net9.0</TargetFrameworks>
+		<TargetFrameworks>uap10.0.17763;uap10.0.26100;net9.0</TargetFrameworks>
 		<PackageId>Otp.NET</PackageId>
 		<Title>Otp.NET</Title>
 		<Authors>Kyle Spearrin</Authors>
@@ -23,7 +23,7 @@
 		<LangVersion>13.0</LangVersion>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)'=='uap10.0.17763' or '$(TargetFramework)'=='uap10.0.22621'">
+	<ItemGroup Condition="'$(TargetFramework)'=='uap10.0.17763' or '$(TargetFramework)'=='uap10.0.26100'">
 		<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
 	</ItemGroup>
 
